@@ -1,0 +1,102 @@
+<!--
+    ALUMNO: Raúl Sarmiento García
+    FECHA: 01-12-2023
+    MÓDULO: LMSGI
+    UD: 02
+    TAREA EVALUATIVA 02
+    DESCRIPCION: Contacto de la página web.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listas de reproducción musicales">
+    <meta name="keywords" content="playlist, best-of, muúsica">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="../styles/formatos.css">
+    <style>
+        .span-input {
+            font-size: 130%;
+            display: inline-block;
+            width: 8%;
+            margin-bottom: 1%;
+        }
+
+        .text-input {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3%;
+            border-color: lightgrey;
+            font-size: 110%;
+            width: 50%;
+            margin-left: 1%;
+            padding-left: 1%;
+        }
+
+        textarea {
+            display: inline-block;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 3%;
+            font-size: 110%;
+            padding: 1%;
+            margin-left: 1%;
+        }
+
+        .boton {
+            display: block;
+            padding: 1%;
+            font-size: 125%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 4%;
+            background-color: #eff5f6;
+            margin-left: 31%;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <main class="main">
+        <!-- Encabezado de página -->
+        <header class="header">
+            <div class="article-header">
+                <table class="table-header">
+                    <tr class="tr-header">
+                        <td style="text-align: left; ">
+                            <span class="span-header">POP OF THE TOPS</span>
+                        </td>
+                        <td style="text-align: right;">
+                            <nav>
+                                <a href="../index.html" class="link-header">INICIO</a>
+                                <a href="generos.html" class="link-header">LISTAS</a>
+                                <a href="bandas.html" class="link-header">BANDAS</a>
+                                <a href="contacto.html" class="link-header" style="color: white;">CONTACTO</a>
+                            </nav>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <!-- Formnulario -->
+        <div style="text-align: left; position: relative; left: 15%; top: 5vh">
+            <form action="mailto:rsarmiento@birt.eus" method="post" style="margin-left:2%;">
+                <fieldset>
+                    <legend style="font-size: 150%; font-weight: lighter;">Envianos un mensaje</legend><br>
+                    <span class="span-input">Nombre </span><input type="text" name="nombre" class="text-input"><br>
+                    <span class="span-input">email</span><input type="text" name="email" class="text-input"><br>
+                    <span class="span-input">Mensaje</span>
+                    <textarea name="mensaje" rows="20" cols="60">Escribe aqui tu comentario.</textarea>
+                    <input type="submit" name="submit" value="Enviar" class="boton">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
